@@ -114,70 +114,61 @@ Trust Score + Recommendation
 
 ## 📁 Project Structure
 
-```
+```text
 netsense/
 │
 ├── frontend/
-│   ├── index.html          # Main page
-│   ├── test.html           # Run WiFi test
-│   ├── result.html         # Show results
-│   ├── map.html            # Show nearby places --- For Future Enhancements
+│   ├── index.html              # Main page
+│   ├── test.html               # Run Wi-Fi test
+│   ├── result.html             # Show results
+│   ├── map.html                # Nearby places (future enhancement)
 │   │
 │   ├── css/
 │   │   └── styles.css
 │   │
-│   ├── js/
-│   │   ├── app.js          # General logic
-│   │   ├── api.js          # API calls
-│   │   ├── wifi.js         # Speed test + score
-│   │   └── map.js          # Map logic---- For Future Enhancements
-│   │
-│   └── index.html           # Dummy file ---- This file will automatically "push" the user to the real page.
+│   └── js/
+│       ├── app.js              # General application logic
+│       ├── api.js              # API calls
+│       ├── wifi.js             # Wi-Fi testing and scoring
+│       └── map.js              # Map functionality (future enhancement)
 │
-│
-├── backend/                 # FastAPI Server
+├── backend/                    # FastAPI server
 │   ├── app/
-│   │   ├── main.py          # Entry point
+│   │   ├── main.py             # Application entry point
 │   │   │
-│   │   ├── routes/          # API routes
+│   │   ├── routes/             # API routes
 │   │   │   ├── wifi.py
 │   │   │   └── recommendation.py
 │   │   │
-│   │   ├── models/          # Data models
+│   │   ├── models/             # Data models
 │   │   │   └── wifi_model.py
 │   │   │
-│   │   ├── services/        # Business logic
+│   │   ├── services/           # Business logic
 │   │   │   ├── wifi_service.py
 │   │   │   └── ai_service.py
 │   │   │
-│   │   ├── db/              # Database connection
+│   │   ├── db/                 # Database connection
 │   │   │   └── database.py
 │   │   │
 │   │   └── utils/
 │   │       └── score_calculator.py
 │   │
-│   │
-│   ├── ai-model/                # ML Model (Optional for hackathon)
-│   │      ├── train.py
-│   │      ├── model.pkl
-│   │      ├── columns.pkl
-│   │      └── dataset.csv
+│   ├── ai-model/               # Machine learning model
+│   │   ├── train.py
+│   │   ├── model.pkl
+│   │   ├── columns.pkl
+│   │   └── dataset.csv
 │   │
 │   ├── requirements.txt
 │   └── run.py
 │
-│
-│
-├── docs/                   # Documentation
+├── docs/                       # Documentation
 │   ├── architecture.md
 │   └── api-docs.md
 │
-├── .env                    # Environment variables
-├── README.md
-└── .gitignore
-```
-
----
+├── .env                        # Environment variables
+├── .gitignore
+└── README.md
 
 ## ⚙️ Tech Stack
 
